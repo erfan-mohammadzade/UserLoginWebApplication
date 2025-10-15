@@ -75,3 +75,5 @@ D:\Project\SAAS\UserLoginWebApplication\WebApplicationLogin\bin\Debug\net9.0\Web
 D:\Project\SAAS\UserLoginWebApplication\WebApplicationLogin\obj\Debug\net9.0\WebApplicationLogin.csproj.AssemblyReference.cache
 D:\Project\SAAS\UserLoginWebApplication\WebApplicationLogin\obj\Debug\net9.0\WebApplicationLogin.MvcApplicationPartsAssemblyInfo.cs
 D:\Project\SAAS\UserLoginWebApplication\WebApplicationLogin\obj\Debug\net9.0\WebAppli.310D9E0B.Up2Date
+D:\Project\SAAS\UserLoginWebApplication\WebApplicationLogin\bin\Debug\net9.0\WebApplicationLogin.staticwebassets.runtime.json
+D:\Project\SAAS\UserLoginWebApplication\WebApplicationLogin\obj\Debug\net9.0\compressed\c68hyk2e71-v3hn0g0t9a.gz
