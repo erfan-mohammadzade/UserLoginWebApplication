@@ -1,0 +1,18 @@
+@page "/{componentName.toLowerCase()}"
+@model WebAppUserLogin.Views.Account.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+<input type="text" name="username" placeholder="Username" required />
+<input type="password" name="password" placeholder="Password"required />
+<button type="submit">Create Account</button>
+</form>
+
+@if(ViewBag.Error != null)
+{
+    <p>T</p>
+}
