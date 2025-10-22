@@ -38,7 +38,7 @@ public class AccountController : Controller
         var identity = new ClaimsIdentity(claims, "MyCookiAuth");
         var principal = new ClaimsPrincipal(identity);
 
-        await HttpContext.SignInAsync("NyCookiAuth", principal);
+        await HttpContext.SignInAsync("MyCookiAuth", principal);
         return RedirectToAction("index", "Panel");
     }
     [HttpGet]
@@ -48,14 +48,14 @@ public class AccountController : Controller
     {
         if (await _context.Users.AnyAsync(ui => ui.Username == username))
         {
-            ViewBag.Error("User already Exist");
+            ViewBag.Error = "User already Exist";
             return View();
         }
 
         var user = new User { Username = username, Password = HashPassword(password) };
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
-        return RedirectToAction("Loign");
+        return RedirectToAction("Login");
     }
 
     [HttpGet]

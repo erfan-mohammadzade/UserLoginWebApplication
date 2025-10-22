@@ -1,5 +1,3 @@
-@page "/{componentName.toLowerCase()}"
-@model WebAppUserLogin.Views.Account.Pages.RegisterModel
 @{
     ViewData["Title"] = "Register";
 }
@@ -14,5 +12,7 @@
 
 @if(ViewBag.Error != null)
 {
-    <p>T</p>
+    <p style="color:red">@ViewBag.Error</p>
 }
+
+<p>Already have an account? <a href="/Account/Login">Login</a></p>

@@ -1,8 +1,8 @@
-using System;
-
-namespace WebAppUserLogin.Views.Account;
-
-public class Logincshtml
-{
-    
+@{
+    ViewData["Title"] = "User Panel";
 }
+<h2>Welcome, @ViewBag.Username</h2>
+
+<p>This is user panel</p>
+
+<a href="/Account/Logout">Logout</a>
