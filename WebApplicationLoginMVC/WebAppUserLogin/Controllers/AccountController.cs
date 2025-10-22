@@ -44,7 +44,7 @@ public class AccountController : Controller
     [HttpGet]
     public IActionResult Register() => View();
     [HttpPost]
-    public async Task<IActionResult> Register(string username, string password)
+    public async Task<IActionResult> Register(string username, string password, string firstname, string lastname, DateOnly birthdate)
     {
         if (await _context.Users.AnyAsync(ui => ui.Username == username))
         {
@@ -52,7 +52,7 @@ public class AccountController : Controller
             return View();
         }
 
-        var user = new User { Username = username, Password = HashPassword(password) };
+        var user = new User { Username = username, Password = HashPassword(password), Firstname = firstname, Lastname = lastname, Birthdate = birthdate };
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
         return RedirectToAction("Login");
